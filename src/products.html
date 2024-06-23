@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <title>Home Cabinet and Tile - Products</title>
+    <link rel = "stylesheet" href = "index.css">
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "offscreen">
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "about.html">About</a></li>
+          <li><a href = "products.html">Products and Services</a></li>
+          <li><a href = "gallery.html">Gallery</a></li>
+          <li><a href = "contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <nav>
+        <div class = "menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div class = "navbar"> <!--navbar-->
+        <a href = "index.html"><div class = "nav-button">Home</div></a>
+        <a href = "about.html"><div class = "nav-button">About</div></a>
+        <a href = "products.html"><div class = "nav-button">Products and Services</div></a>
+        <a href = "gallery.html"><div class = "nav-button">Gallery</div></a>
+        <a href = "contact.html"><div class = "nav-button">Contact</div></a>
+          <h1> Products and Services </h1>
+          <div class = "logo">
+            <img src = "imgs/logo.png">
+          </div>
+          <!--<img src = "climate_change/img/image1.png"> change the picture to something else -->
+          <!--holiday cabinetry http://www.holidaycabinetry.com/contact-us/#
+          glacier bay/calandine collection
+          fotile a breath of fresh engineering https://us.fotileglobal.com/pages/about-us
+          oakland made with pride
+          delta portwood https://www.deltafaucet.com/
+          fine stone https://fine-stone.com/
+          dowell https://dowellusa.com/
+          moen https://www.moen.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand_moen_google_exact&utm_content=moen_exact-_-&utm_term=moen&gad_source=1&gclid=Cj0KCQjwsPCyBhD4ARIsAPaaRf0KCcuhss9aavH2N51-reNXCDxyJek7fVekDl_qjTDLqh_tJ9tsHdkaAtViEALw_wcB&gclsrc=aw.ds
+          chunghua stone kitchen inc-->
+      </div> <!--navbar-->
+
+      <div class = "title">
+        <h1> Home Cabinet and Tile </h1>
+      </div>
+
+      <div class="list">
+        <div class = "product">
+          <img src ="imgs/holidaycabinetry.png">
+          <h2> Holiday Cabinetry </h2>
+          <a href = "http://www.holidaycabinetry.com/contact-us/#"> Click to Shop </a>
+        </div>
+
+        <div class = "product">
+          <img src ="imgs/glacierbay.jpg">
+          <h2> Glacier Bay </h2>
+          <a href = "https://www.glacierbayshop.com/"> Click to Shop </a>
+        </div>
+
+        <div class = "product">
+          <img src ="imgs/fotile.jpg">
+          <h2> Fotile </h2>
+          <a href = "https://us.fotileglobal.com/pages/about-us"> Click to Shop </a>
+        </div>
+        <!--
+        <div class = "product">
+          
+          <img src ="https://images.thdstatic.com/productImages/a3adf9a8-30a6-418f-abbb-4f339bafb086/svn/beige-matte-florida-tile-home-collection-porcelain-tile-chdech0112x24p-64_1000.jpg">
+          <h2> Oakland </h2>
+          <p> Placeholder </p>
+          
+        </div>
+        -->
+        <div class = "product">
+          <img src ="imgs/delta.jpg">
+          <h2> Delta </h2>
+          <a href = "https://www.deltafaucet.com/"> Click to Shop </a> 
+        </div>
+
+        <div class = "product">
+          <img src ="imgs/finestone.png">
+          <h2> Fine Stone </h2>
+          <a href = "https://fine-stone.com/"> Click to Shop </a> 
+        </div>
+
+        <div class = "product">
+          <img src ="imgs/dowell.png">
+          <h2> Dowell </h2>
+          <a href = "https://dowellusa.com/ "> Click to Shop </a>
+        </div>
+
+        <div class = "product">
+          <img src ="imgs/moen.png">
+          <h2> Moen </h2>
+          <a href = "https://shop.moen.com/collections/bathroom-faucets?utm_campaign=moen_dtc-moengen_intent_product_bath-faucet&utm_source=paid-search_google&utm_medium=pmax_&utm_content=dtc-search_&utm_campaign=moen_dtc-moengen_intent_product_bath-faucet&utm_source=paid-search_google&utm_medium=pmax_&utm_content=dtc-search_&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvcMDxK78o_Iw5GQAfpF9MJl6im9LqX1VaeNAYeibVLyIHRBK4eMalxoCwZYQAvD_BwE&gclsrc=aw.ds"> Click to Shop </a>
+        </div>
+
+        <div class = "product">
+          <img src ="https://images.thdstatic.com/productImages/a3adf9a8-30a6-418f-abbb-4f339bafb086/svn/beige-matte-florida-tile-home-collection-porcelain-tile-chdech0112x24p-64_1000.jpg">
+          <h2> Placeholder </h2>
+          <p> Placeholder </p>
+        </div>
+
+        <div class = "product">
+          <img src ="https://images.thdstatic.com/productImages/a3adf9a8-30a6-418f-abbb-4f339bafb086/svn/beige-matte-florida-tile-home-collection-porcelain-tile-chdech0112x24p-64_1000.jpg">
+          <h2> Placeholder </h2>
+          <p> Placeholder </p>
+        </div>
+
+        <div class = "footer">
+          <p>Created by Julia Ou for Home Cabinet and Tile</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const menu = document.querySelector('.menu');
+      const offScreenMenu = document.querySelector('.offscreen');
+      var slides = document.getElementsByClassName('slides');
+      var prevArrow = document.getElementsByClassName('prev');      
+      var nextArrow = document.getElementsByClassName('next');
+
+      //when you click the hamburger menu
+      menu.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        offScreenMenu.classList.toggle('active');
+
+        //checking to see if any of the slides are showing
+        var isBlock = false;
+        for(var i = 0; i < slides.length; i++)
+        {
+          if(slides[i].style.display === "block")
+          {
+            isBlock = true;
+          }
+        }
+        if(isBlock)
+        {
+          for (var i = 0; i < slides.length; i ++) 
+          {
+            slides[i].style.display = "none";
+            prevArrow[0].style.display = "none";
+            nextArrow[0].style.display = "none";
+          }
+        }
+        else
+        {
+          slideIndex = 1;
+          for (var i = 0; i < slides.length; i ++) 
+          {
+            slides[i].style.display = "block";
+            prevArrow[0].style.display = "block";
+            nextArrow[0].style.display = "block";
+            showSlides(slideIndex)
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

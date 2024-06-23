@@ -1,12 +1,10 @@
 <html>
   <head>
-    <title>Home Cabinet and Tile</title>
+    <title>Home Cabinet and Tile - About</title>
     <link rel = "stylesheet" href = "index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class = "container">
-
       <div class = "offscreen">
         <ul>
           <li><a href = "index.html">Home</a></li>
@@ -23,17 +21,16 @@
           <span></span>
         </div>
       </nav>
-
       <div class = "navbar"> <!--navbar-->
         <a href = "index.html"><div class = "nav-button">Home</div></a>
         <a href = "about.html"><div class = "nav-button">About</div></a>
         <a href = "products.html"><div class = "nav-button">Products and Services</div></a>
         <a href = "gallery.html"><div class = "nav-button">Gallery</div></a>
         <a href = "contact.html"><div class = "nav-button">Contact</div></a>
-        <h1> Home Cabinet and Tile </h1>
-        <div class = "logo">
-          <img src = "imgs/logo.png">
-        </div>
+          <h1> About </h1>
+          <div class = "logo">
+            <img src = "imgs/logo.png">
+          </div>
           <!--<img src = "climate_change/img/image1.png"> change the picture to something else -->
       </div> <!--navbar-->
 
@@ -41,87 +38,18 @@
         <h1> Home Cabinet and Tile </h1>
       </div>
 
-      <!--https://www.w3schools.com/howto/howto_js_slideshow.asp for the carousel
-      https://www.w3schools.com/howto/howto_js_mobile_navbar.asp for the menu drop down-->
-      <div class = "slideshow"> <!-- slideshow -->
-        <div class = "slides">
-          <div class = "slidenum"> 1 / 3 </div>
-          <img class = "slidepic" src = "galleries/11.webp" style = "width:100%">
-          <div class = "captions"> Living Room </div>
-        </div>
-
-        <div class = "slides">
-          <div class = "slidenum"> 2 / 3 </div>
-          <img class = "slidepic" src = "galleries/33.jpeg" style = "width:100%">
-          <div class = "captions"> Kitchen </div>
-        </div>
-
-        <div class = "slides">
-          <div class = "slidenum"> 3 / 3 </div>
-          <img class = "slidepic" src = "galleries/36.jpeg" style = "width:100%">
-          <div class = "captions"> Bathroom </div>
-        </div>
-
-        <!-- the arrows -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div> <!-- slideshow -->
-      <br>
-
-      <!-- the dots at the bottom of the carousel -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      <br>
+      <div class = "main"> <!--main-->
+        <div class = "about"> <!--about-->
+          <h2>Our Mission Statement:</h2>
+          <p>We aim to...</p>
+        </div> <!--about-->
+      </div> <!--main-->
 
       <div class = "footer">
         <p>Created by Julia Ou for Home Cabinet and Tile</p>
       </div>
     </div>
     <script>
-      //carousel functions
-      let slideIndex = 1;
-      showSlides(slideIndex)
-
-      function plusSlides(n) 
-      {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) 
-      {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n)
-      {
-        let i;
-        let slides = document.getElementsByClassName('slides');
-        let dots = document.getElementsByClassName('dot');
-
-        if(n > slides.length)
-        {
-          slideIndex = 1;
-        }
-        if(n < 1)
-        {
-          slideIndex = slides.length
-        }
-        for(i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        for(i = 0; i < dots.length; i++)
-        {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        slides[slideIndex - 1].className += " active";
-      }
-
-      //hamburger menu
       const menu = document.querySelector('.menu');
       const offScreenMenu = document.querySelector('.offscreen');
       var slides = document.getElementsByClassName('slides');

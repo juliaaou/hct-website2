@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title
+{
+  display: none;
+  text-align: center;
+}
+
+.navbar
+{
+  font-size: 20px;
+  margin-left: 40px;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.main
+{
+  margin-left: 40px;
+  width: 75%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.nav-button
+{
+  display: inline-block;
+  margin-right: 40px;
+  color: grey;
+}
+
+/*button for the filters*/
+button 
+{
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+/*color for the button when clicked*/
+.filter-active
+{
+  color: rgb(0, 17, 255);
+}
+
+.filters
+{
+  text-align: center;
+}
+
+img
+{
+  width: 100%; 
+  max-width: 300px; 
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.product {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.logo
+{
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  max-width: 200px;
+}
+
+/*carousel CSS*/
+
+.slideshow
+{
+  /* adjust the size for each screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: black;
+  transition: 0.6s ease;
+  user-select: none;
+  padding: 16px;
+}
+
+.next 
+{
+  right: 0;
+}
+
+.prev
+{
+  left: 0;
+}
+
+.slides
+{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slidepic
+{
+  max-width:1000px;
+}
+
+.captions
+{
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slidenum
+{
+  padding: 8px 12px;
+  position: absolute;
+  top: 10;
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active 
+{
+  color: white;
+}
+
+.offscreen
+{
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  right: -100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.offscreen.active
+{
+  left: 0;
+  color: black;
+}
+
+.nav
+{
+  padding:1rem;
+  display:flex;
+  background-color: black;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+/*hamburger menu CSS*/
+
+.menu
+{
+  height: 40px;
+  width: 40px;
+  left: 40px;
+  top: 20px;
+  position: relative;
+  display: none;
+  color: black;
+}
+
+.menu span
+{
+  height: 5px;
+  width: 100%;
+  background-color: grey;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.footer
+{
+  /*make it so that it is always at the very bottom*/
+  text-align: center;
+  font-size: 10px;
+}
+
+.menu span:nth-child(1)
+{
+  top: 25%;
+}
+
+.menu span:nth-child(3)
+{
+  top: 75%;
+}
+
+.menu.active span:nth-child(1)
+{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+}
+
+.menu.active span:nth-child(2)
+{
+  opacity:0;
+}
+
+.menu.active span:nth-child(3)
+{
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: center;
+}
+
+/* media sizes */
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 90%;
+    max-width: none;
+    margin: 5% auto;
+  }
+  .card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .product {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+  .logo
+  {
+    max-width: 90px;
+    top:0px;
+    right: 5px;
+    position: absolute;
+  }
+  .slidepic
+  {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .menu
+  {
+    display: block;
+  }
+  .title
+  {
+    display: block;
+    color: black;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card 
+  {
+    width: calc(40% - 20px);
+  }
+  .product 
+  {
+    width: calc(40% - 20px);
+  }
+  .slidepic
+  {
+    width: calc(40% - 20px);
+  }
+  .logo
+  {
+    max-width: 90px;
+    top:0px;
+    right: 5px;
+    position: absolute;
+  }
+  .menu
+  {
+    display: block;
+  }
+  .title
+  {
+    display: block;
+    color: black;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar h1 {
+    display: none;
+  }
+  .menu {
+    top: 20px;
+    left: 20px;
+    display: block;
+  }
+  .title
+  {
+    display: block;
+    color: black;
+    margin: 0px;
+  }
+}
